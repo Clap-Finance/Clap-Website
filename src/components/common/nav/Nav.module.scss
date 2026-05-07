@@ -1,5 +1,7 @@
 @use "@/scss/index" as *;
 
+$mobile: map-get($breakpoints, md);
+
 .nav {
   width: 100%;
   padding: $spacing-md;
@@ -12,13 +14,146 @@
     margin: 0 auto;
   }
 
-  &__links {
+  .links {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-lg;
   }
 
-  &__cta {
-     display: flex;
-     align-items: center;
-     gap: $spacing-sm;
+  &__links {
+    display: flex;
+    gap: $spacing-sm;
+
+    li {
+      font-weight: 500;
+      letter-spacing: -0.025rem;
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
+
+&__cta {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+&__ctaButton {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+  &__hamburger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: $spacing-xs;
+    color: inherit;
+    line-height: 0;
+
+    @media (max-width: $mobile) {
+      display: flex;
+    }
+  }
+}
+
+// ─── Backdrop ────────────────────────────────────────────────────────────────
+.nav__backdrop {
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+    &--open {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+// ─── Mobile Drawer ───────────────────────────────────────────────────────────
+.nav__drawer {
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100dvh;
+    width: min(80vw, 320px);
+    background: var(--color-surface, #fff); // use your design token
+    z-index: 100;
+    padding: $spacing-lg $spacing-md;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+}
+
+.nav__drawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: $spacing-xs;
+  color: inherit;
+  line-height: 0;
+  transition: opacity 0.2s ease;
+
+  &:hover { opacity: 0.6; }
+}
+
+.nav__drawerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+
+    &:hover { opacity: 0.6; }
+  }
+}
+
+.nav__drawerCta {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  margin-top: auto; // push to bottom of drawer
 }

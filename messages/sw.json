@@ -1,0 +1,24 @@
+{
+  "Navigation": {
+    "community": "Jamii",
+    "convert": "Badilisha",
+    "contact": "Mawasiliano"
+  },
+  "Translation": {
+    "english": "Kiingereza",
+    "french": "Kifaransa",
+    "swahili": "Kiswahili"
+  },
+  "HomePage": {
+    "heroSection": {
+      "title": "Hamisha pesa jinsi inavyopaswa kuwa — haraka, rahisi, bila mipaka.",
+      "description": "Clap ni huduma ya kutuma pesa inayorahisisha kutuma na kupokea pesa kote Afrika Magharibi.",
+      "cta": "Omba ufikiaji wa mapema"
+    },
+    "conversionSection": {
+      "title": "Badilisha pesa papo hapo kwa viwango vya moja kwa moja kati ya Naira, Cedi, na CFA — ili ujue kila wakati kiasi unachotuma na kinachowasili.",
+      "description": "Badilisha pesa zako kwa viwango bora zaidi.",
+      "cta": "Omba ufikiaji wa mapema"
+    }
+  }
+}

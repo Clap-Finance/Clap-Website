@@ -1,12 +1,24 @@
 {
+  "Navigation": {
+    "community": "Communauté",
+    "convert": "Convertir",
+    "contact": "Contact"
+  },
+  "Translation": {
+    "english": "Anglais",
+    "french": "Français",
+    "swahili": "Swahili"
+  },
   "HomePage": {
-    "title": "Convertissez votre argent instantanément avec des taux en temps réel entre le naira, le cedi et le franc CFA — pour savoir exactement ce que vous envoyez et ce qui arrive.",
-    "description": "Convertissez votre argent aux meilleurs taux.",
-    "cta": "Rejoindre la liste d’attente",
+    "heroSection": {
+      "title": "Déplacez votre argent comme il se doit — rapidement, simplement et sans frontières.",
+      "description": "Clap est un service de transfert d'argent qui facilite l'envoi et la réception d'argent à travers l'Afrique de l'Ouest.",
+      "cta": "Demander un accès anticipé"
+    },
     "conversionSection": {
-      "title": "Convertissez votre argent instantanément avec des taux en temps réel entre le naira, le cedi et le franc CFA — pour savoir exactement ce que vous envoyez et ce qui arrive.",
+      "title": "Convertissez votre argent instantanément avec des taux en temps réel entre le Naira, le Cedi et le CFA — pour toujours savoir exactement ce que vous envoyez et ce qui est reçu.",
       "description": "Convertissez votre argent aux meilleurs taux.",
-      "cta": "Rejoindre la liste d’attente"
+      "cta": "Demander un accès anticipé"
     }
   }
 }

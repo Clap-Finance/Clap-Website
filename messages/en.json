@@ -1,8 +1,18 @@
 {
+  "Navigation": {
+    "community": "Community",
+    "convert": "Convert",
+    "contact": "Contact"
+  },
+  "Translation": {
+    "english": "English",
+    "french": "French",
+    "swahili": "Swahili"
+  },
   "HomePage": {
     "heroSection": {
       "title": "Move money like it should be — fast, simple, borderless.",
-      "description": "Clap is a money transfer service that makes it easy to send and receive money",
+      "description": "Clap is a money transfer service that makes it easy to send and receive money across West Africa.",
       "cta": "Request early access"
     },
     "conversionSection": {

@@ -1,6 +1,6 @@
 "use client";
 import { Global } from "iconsax-reactjs";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -11,13 +11,14 @@ const languages = [
 ];
 
 export default function LanguageSwitcher() {
+const t = useTranslations("Translation");
+
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   const switchLocale = (newLocale: string) => {
-    // Replace the locale segment in the current path
     const segments = pathname.split("/");
     segments[1] = newLocale; // [0] is "", [1] is the locale
     router.push(segments.join("/"));

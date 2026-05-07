@@ -5,28 +5,24 @@ import styles from "./LanguagePopover.module.scss";
 import { Global } from "iconsax-reactjs";
 import Modal from "../common/modal";
 import { MdGTranslate } from "react-icons/md";
-import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
-
-const languages = [
-  { code: "en", label: "English" },
-  { code: "fr", label: "French" },
-  { code: "es", label: "Spanish" },
-  // Add more languages here if needed
-];
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter, usePathname } from "@/i18n/navigation"; // ← your next-intl navigation file, NOT next/navigation
 
 const LanguagePopover = () => {
-  const locale = useLocale();
+  const t = useTranslations("Translation");
   const router = useRouter();
-  const pathname = usePathname();
+  const pathname = usePathname(); // ← returns path WITHOUT locale prefix when from next-intl
+  const currentLocale = useLocale();
   const [open, setOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
+
+  const languages = [
+    { code: "en", label: t("english") },
+    { code: "fr", label: t("french") },
+    { code: "sw", label: t("swahili") },
+  ];
 
   const switchLocale = (newLocale: string) => {
-    // Replace the locale segment in the current path
-    const segments = pathname.split("/");
-    segments[1] = newLocale; // [0] is "", [1] is the locale
-    router.push(segments.join("/"));
+    router.replace(pathname, { locale: newLocale }); // ← next-intl's router accepts locale option
     setOpen(false);
   };
 
@@ -37,8 +33,8 @@ const LanguagePopover = () => {
         onClick={() => setOpen(true)}
         popoverTarget="mypopover"
       >
-        <Global size="20" color="#1c1c1c" variant="TwoTone" />{" "}
-        {language.toUpperCase()}
+        <Global size="20" color="#1c1c1c" variant="TwoTone" />
+        {currentLocale.toUpperCase()}
       </button>
 
       <Modal id="mypopover">
@@ -51,8 +47,8 @@ const LanguagePopover = () => {
             {languages.map((lang) => (
               <li
                 key={lang.code}
-                className={language === lang.code ? styles.active : ""}
-                onClick={() => setLanguage(lang.code)}
+                className={currentLocale === lang.code ? styles.active : ""}
+                onClick={() => switchLocale(lang.code)}
               >
                 <MdGTranslate />
                 <span>{lang.label}</span>
