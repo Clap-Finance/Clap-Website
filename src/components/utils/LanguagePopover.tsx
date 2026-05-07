@@ -6,12 +6,12 @@ import { Global } from "iconsax-reactjs";
 import Modal from "../common/modal";
 import { MdGTranslate } from "react-icons/md";
 import { useLocale, useTranslations } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/navigation"; // ← your next-intl navigation file, NOT next/navigation
+import { useRouter, usePathname } from "@/i18n/navigation";
 
 const LanguagePopover = () => {
   const t = useTranslations("Translation");
   const router = useRouter();
-  const pathname = usePathname(); // ← returns path WITHOUT locale prefix when from next-intl
+  const pathname = usePathname();
   const currentLocale = useLocale();
   const [open, setOpen] = useState(false);
 
@@ -21,10 +21,11 @@ const LanguagePopover = () => {
     { code: "sw", label: t("swahili") },
   ];
 
-  const switchLocale = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale }); // ← next-intl's router accepts locale option
-    setOpen(false);
-  };
+ const switchLocale = (newLocale: string) => {
+  router.replace(pathname, { locale: newLocale });
+  router.refresh();
+  setOpen(false);
+};
 
   return (
     <div className={styles.nations_wrapper}>
