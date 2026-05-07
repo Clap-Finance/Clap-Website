@@ -7,6 +7,8 @@ import Button from "../button";
 import LanguagePopover from "@/components/utils/LanguagePopover";
 import { useTranslations } from "next-intl";
 import { HamburgerMenu, CloseCircle } from "iconsax-reactjs";
+import Modal from "../modal";
+import WaitlistFOrm from "@/app/[locale]/(home)/_components/form/Waitlist";
 
 const Nav = () => {
   const t = useTranslations("Navigation");
@@ -46,7 +48,7 @@ const Nav = () => {
           <div className={style.nav__cta}>
             <LanguagePopover />
 
-            <Button className={style.nav__ctaButton}>
+            <Button className={style.nav__ctaButton}  popoverTarget="join_waitlist">
               {hero("heroSection.cta")}
             </Button>
 
@@ -99,6 +101,10 @@ const Nav = () => {
           <Button>{hero("heroSection.cta")}</Button>
         </div>
       </div>
+
+      <Modal id={"join_waitlist"}>
+        <WaitlistFOrm/>
+      </Modal>
     </>
   );
 };

@@ -25,6 +25,11 @@ $gradient-secondary: linear-gradient(
   $color-black 100%
 );
 /* ========================
+   ANIMATIONS
+======================== */
+$keyframe-reveal-up: revealUp;
+$animation-reveal-up: #{$keyframe-reveal-up} 1s cubic-bezier(0.16, 1, 0.3, 1) both 0.1s;
+/* ========================
    TYPOGRAPHY
 ======================== */
 $font-primary: "Inter", sans-serif;

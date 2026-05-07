@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Button.module.scss";
+import { TbLoader } from "react-icons/tb";
 
 type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
 type ButtonSize = "sm" | "md" | "lg";
@@ -42,7 +43,7 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disabled || loading}
       {...props}
     >
-      {loading && <span className={styles.spinner} />}
+      {loading && <TbLoader className="animate-spin text-xl" />}
 
       {!loading && leftIcon && (
         <span className={styles.icon}>{leftIcon}</span>

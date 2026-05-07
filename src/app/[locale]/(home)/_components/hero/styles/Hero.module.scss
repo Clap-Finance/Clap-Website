@@ -1,52 +1,63 @@
 @use "@/scss/index" as *;
 
+@keyframes #{$keyframe-reveal-up} {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero {
   width: 100%;
   padding: 0 $spacing-md;
-
   color: $color-white;
 
   &_wrapper {
     background-color: $color-primary;
     width: 100%;
+    max-width: map-get($breakpoints, xxl);
     height: calc(100vh - 95px);
     border-radius: $radius-xl;
     margin: auto;
     padding: $spacing-md;
+    overflow: hidden;
   }
 
   &_content {
     width: 100%;
     height: 100%;
+
     &_left {
       width: 100%;
       height: 100%;
       max-width: map-get($breakpoints, sm);
       display: flex;
       flex-direction: column;
-
       align-items: start;
       justify-content: center;
       gap: $spacing-lg;
       padding: 0 useAdvanceClamp(350, 1140, 12, 56);
 
       &_top {
-
         display: grid;
         gap: $spacing-md;
-         h1 {
-        font-size: useAdvanceClamp(350, 1140, 40, 56);
-        line-height: useAdvanceClamp(350, 1140, 48, 50);
-        letter-spacing: -0.15rem;
-        font-weight: 500;
-      }
 
-      p {
-         max-width: map-get($breakpoints, xs);
-      }
-      }
+        h1 {
+          font-size: useAdvanceClamp(350, 1140, 40, 56);
+          line-height: useAdvanceClamp(350, 1140, 48, 50);
+          letter-spacing: -0.15rem;
+          font-weight: 500;
+          animation: $animation-reveal-up;
+        }
 
-
+        p {
+          max-width: map-get($breakpoints, xs);
+        }
+      }
     }
   }
 }
@@ -56,4 +67,5 @@
   border: 2px solid $bg-section-border;
   padding: $spacing-md;
   border-radius: $radius-lg;
+  overflow: hidden;
 }

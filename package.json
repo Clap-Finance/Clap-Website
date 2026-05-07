@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "iconsax-reactjs": "^0.0.8",
+    "mongodb": "^7.2.0",
     "next": "16.2.4",
     "next-intl": "^4.11.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "react-hook-form": "^7.75.0",
     "react-icons": "^5.6.0",
     "sass": "^1.99.0"
   },

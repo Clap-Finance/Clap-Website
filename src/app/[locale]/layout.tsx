@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Boldonse } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -8,6 +8,11 @@ import Nav from "@/components/common/nav";
 const interSans = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
+});
+
+const boldonse = Boldonse({
+  weight: "400",
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {

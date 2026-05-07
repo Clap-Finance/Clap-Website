@@ -22,7 +22,7 @@
       font-weight: 400;
       text-align: right;
       max-width: map-get($container-widths, lg);
-      line-height: initial;
+      line-height: 2.5rem;
     }
   }
 
@@ -39,7 +39,7 @@
       grid-column: span 3;
       max-height: 480px;
 
-      @media (max-width: map-get($breakpoints, xl)) {
+      @media (max-width: map-get($container-widths, xl)) {
         grid-column: span 1;
       }
     }
@@ -47,7 +47,7 @@
     div:last-child {
       grid-column: span 2;
 
-       @media (max-width: map-get($breakpoints, xl)) {
+       @media (max-width: map-get($container-widths, xl)) {
         grid-column: span 1;
       }
     }

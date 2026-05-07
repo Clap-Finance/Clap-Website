@@ -13,7 +13,6 @@ const LanguagePopover = () => {
   const router = useRouter();
   const pathname = usePathname();
   const currentLocale = useLocale();
-  const [open, setOpen] = useState(false);
 
   const languages = [
     { code: "en", label: t("english") },
@@ -24,14 +23,12 @@ const LanguagePopover = () => {
  const switchLocale = (newLocale: string) => {
   router.replace(pathname, { locale: newLocale });
   router.refresh();
-  setOpen(false);
 };
 
   return (
     <div className={styles.nations_wrapper}>
       <button
         className={styles.openBtn}
-        onClick={() => setOpen(true)}
         popoverTarget="mypopover"
       >
         <Global size="20" color="#1c1c1c" variant="TwoTone" />
