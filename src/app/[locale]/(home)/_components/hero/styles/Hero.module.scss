@@ -19,7 +19,7 @@
   &_wrapper {
     background-color: $color-primary;
     width: 100%;
-    max-width: map-get($breakpoints, xxl);
+    max-width: $xxl;
     height: calc(100vh - 95px);
     border-radius: $radius-xl;
     margin: auto;
@@ -34,7 +34,7 @@
     &_left {
       width: 100%;
       height: 100%;
-      max-width: map-get($breakpoints, sm);
+      max-width: $sm;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -55,7 +55,7 @@
         }
 
         p {
-          max-width: map-get($breakpoints, xs);
+          max-width: $xs;
         }
       }
     }

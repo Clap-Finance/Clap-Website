@@ -27,9 +27,6 @@ $transition:     160ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
   gap: 0;
 
-
-
-  // Glass card
   background: $color-black;
   backdrop-filter: blur(32px) saturate(160%);
   -webkit-backdrop-filter: blur(32px) saturate(160%);
@@ -38,7 +35,6 @@ $transition:     160ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: $spacing-md;                // 16px
   width: clamp(300px, 100%, 420px);
 
-  // Hairline border + faint top-left highlight for glass depth
   border: 1px solid #ffffff1a;
   color: $text-primary;
   position: relative;
@@ -46,9 +42,7 @@ $transition:     160ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 100%;
   height: -webkit-fill-available;
-  // max-width: map-get($breakpoints, xxs);
 
-  // ── Section (send / receive) ──────────────────────────────────────
   &__section {
     display: flex;
     flex-direction: column;

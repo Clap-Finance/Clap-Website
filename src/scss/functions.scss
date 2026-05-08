@@ -19,10 +19,6 @@ $z-index-map: (
   overlay: 3000
 );
 
-@function z($key) {
-  @return map-get($z-index-map, $key);
-}
-
 @function useConvertNumberToRem($pixel, $suffix: 1rem, $base: 16) {
   @if math.is-unitless($pixel) {
     @return math.div($pixel, $base) * $suffix;

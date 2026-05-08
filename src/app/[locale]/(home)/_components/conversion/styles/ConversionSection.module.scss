@@ -4,7 +4,7 @@
   padding: 100px $spacing-md;
 
   &__container {
-    max-width: map-get($breakpoints, xl);
+    max-width: $xl;
     margin: 0 auto;
     display: grid;
     gap: $spacing-xl;
@@ -21,7 +21,7 @@
       color: $color-gray-800;
       font-weight: 400;
       text-align: right;
-      max-width: map-get($container-widths, lg);
+      max-width: $container-lg;
       line-height: 2.5rem;
     }
   }
@@ -30,16 +30,13 @@
     display: grid;
     // display: flex;
     gap: $spacing-md;
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(210px, 1fr)
-    );
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 
     div:first-child {
       grid-column: span 3;
       max-height: 480px;
 
-      @media (max-width: map-get($container-widths, xl)) {
+      @media (max-width: $container-xl) {
         grid-column: span 1;
       }
     }
@@ -47,7 +44,7 @@
     div:last-child {
       grid-column: span 2;
 
-       @media (max-width: map-get($container-widths, xl)) {
+      @media (max-width: $container-xl) {
         grid-column: span 1;
       }
     }

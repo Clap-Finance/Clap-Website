@@ -1,6 +1,6 @@
 @use "@/scss/index" as *;
 
-$mobile: map-get($breakpoints, md);
+$mobile: $md;
 
 .nav {
   width: 100%;
@@ -10,7 +10,7 @@ $mobile: map-get($breakpoints, md);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: map-get($container-widths, xxl);
+    max-width: $container-xxl;
     margin: 0 auto;
   }
 

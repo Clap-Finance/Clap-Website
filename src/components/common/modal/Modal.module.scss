@@ -17,7 +17,7 @@
     border-radius: $spacing-lg;
 
     width: 100%;
-    max-width: map-get($breakpoints, xs);
+    max-width: $xs;
 
     position: fixed;
     height: fit-content;
