@@ -1,0 +1,129 @@
+@use "@/scss/index" as *;
+
+.footer {
+  width: 100%;
+  border-top: 1px solid $bg-section-border;
+  padding: 7rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+  background: $color-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at bottom left,
+      rgba(42, 83, 241, 0.15),
+      transparent 40%
+    );
+    pointer-events: none;
+  }
+
+  &__wrapper {
+    width: min(100% - 32px, $container-xxl);
+    margin-inline: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid $bg-section-border;
+
+    @media screen and (max-width: $lg) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+
+  &__brand {
+    width: 100%;
+    max-width: 28rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    p {
+      color: rgba($color-white, 0.72);
+      font-size: 0.95rem;
+      line-height: 170%;
+      letter-spacing: $letter-spacing-sm;
+    }
+  }
+
+  &__links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+
+    @media screen and (max-width: $md) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 2.5rem;
+    }
+  }
+
+  &__group {
+    min-width: 140px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    span {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: rgba($color-white, 0.45);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    ul {
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      li {
+        a {
+          color: rgba($color-white, 0.78);
+          text-decoration: none;
+          font-size: 0.95rem;
+          transition: all 0.25s ease;
+
+          &:hover {
+            color: $color-accent;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media screen and (max-width: $sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    p,
+    span {
+      color: rgba($color-white, 0.45);
+      font-size: 0.85rem;
+      line-height: 150%;
+    }
+  }
+}

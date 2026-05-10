@@ -12,7 +12,7 @@
   "HomePage": {
     "heroSection": {
       "title": "Move money like it should be — fast, simple, borderless.",
-      "description": "Clap is a money transfer service that makes it easy to send and receive money across West Africa.",
+      "description": "Clap is building the future of African money movement — helping people send, receive, and convert money across borders with speed and transparency.",
       "cta": "Request early access"
     },
     "conversionSection": {
@@ -41,6 +41,21 @@
       "title": "You’re on the",
       "title_highlight": "waitlist!",
       "description": "Thanks for joining the Clap waitlist. We’ll keep you updated and let you know as soon as early access is ready."
+    }
+  },
+  "Footer": {
+    "description": "Clap is building modern financial infrastructure for Africa — making cross-border money movement faster, simpler, and more transparent.",
+    "navigation": "Navigation",
+    "company": "Company",
+    "socials": "Socials",
+    "copyright": "© 2026 Clap. All rights reserved.",
+    "built": "Built for Africa, designed for the world.",
+    "links": {
+      "community": "Community",
+      "convert": "Convert",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
     }
   }
 }

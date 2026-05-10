@@ -4,6 +4,7 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Nav from "@/components/common/nav";
+import Footer from "@/components/common/footer";
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -34,6 +35,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Nav />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

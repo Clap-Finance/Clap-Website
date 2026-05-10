@@ -1,30 +1,30 @@
 {
-  "Translation": {
-    "english": "Kiingereza",
-    "french": "Kifaransa",
-    "swahili": "Kiswahili"
-  },
   "Navigation": {
     "community": "Jamii",
     "convert": "Badilisha",
     "contact": "Wasiliana"
   },
+  "Translation": {
+    "english": "Kiingereza",
+    "french": "Kifaransa",
+    "swahili": "Kiswahili"
+  },
   "HomePage": {
     "heroSection": {
       "title": "Hamisha pesa jinsi inavyopaswa kuwa — haraka, rahisi, bila mipaka.",
-      "description": "Clap ni huduma ya kutuma pesa inayorahisisha kutuma na kupokea pesa kote Afrika Magharibi.",
+      "description": "Clap inajenga mustakabali wa uhamishaji pesa Afrika — kusaidia watu kutuma, kupokea, na kubadilisha pesa kwa uwazi na kasi.",
       "cta": "Omba ufikiaji wa mapema"
     },
     "conversionSection": {
-      "title": "Badilisha pesa papo hapo kwa viwango vya wakati halisi kati ya Naira, Cedi na CFA — ili ujue hasa unachotuma na kinachowasili.",
-      "description": "Badilisha pesa zako kwa viwango bora zaidi.",
+      "title": "Badilisha pesa papo hapo kwa viwango vya muda halisi kati ya Naira, Cedi, na CFA.",
+      "description": "Badilisha pesa zako kwa viwango bora.",
       "cta": "Omba ufikiaji wa mapema"
     }
   },
   "WaitListFormSection": {
-    "title": "Jiunge na orodha ya kusubiri",
-    "description": "Kuwa miongoni mwa wa kwanza kutuma pesa kote Afrika kwa viwango halisi na bila ada zilizofichwa ukitumia Clap.",
-    "cta": "Jiunge na orodha ya kusubiri",
+    "title": "Jiunge na orodha ya wanaosubiri",
+    "description": "Kuwa miongoni mwa wa kwanza kutuma pesa Afrika kwa viwango halisi bila ada zilizofichwa kupitia Clap.",
+    "cta": "Jiunge na orodha ya wanaosubiri",
     "inputFeilds": {
       "fullName": {
         "label": "Jina Kamili",
@@ -39,8 +39,23 @@
   "Modal": {
     "waitlist": {
       "title": "Uko kwenye",
-      "title_highlight": "orodha ya kusubiri!",
-      "description": "Asante kwa kujiunga na orodha ya kusubiri ya Clap. Tutakuweka taarifa na kukujulisha mara tu ufikiaji wa mapema utakapokuwa tayari."
+      "title_highlight": "orodha ya wanaosubiri!",
+      "description": "Asante kwa kujiunga na orodha ya Clap. Tutakujulisha mara tu ufikiaji wa mapema utakapokuwa tayari."
+    }
+  },
+  "Footer": {
+    "description": "Clap inajenga miundombinu ya kisasa ya kifedha kwa Afrika — kufanya uhamishaji wa pesa kuvuka mipaka kuwa wa haraka, rahisi, na wazi zaidi.",
+    "navigation": "Urambazaji",
+    "company": "Kampuni",
+    "socials": "Mitandao",
+    "copyright": "© 2026 Clap. Haki zote zimehifadhiwa.",
+    "built": "Imejengwa kwa Afrika, imeundwa kwa dunia.",
+    "links": {
+      "community": "Jamii",
+      "convert": "Badilisha",
+      "contact": "Wasiliana",
+      "privacy": "Sera ya Faragha",
+      "terms": "Masharti ya Huduma"
     }
   }
 }
