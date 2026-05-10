@@ -1,7 +1,8 @@
 import { MongoClient } from "mongodb";
 
 const URI =
-  "mongodb://127.0.0.1:58813/?directConnection=true";
+  process.env.MONGODB_URI
+  ?? "mongodb://127.0.0.1:58813/?directConnection=true";
 
 const client = new MongoClient(URI);
 
