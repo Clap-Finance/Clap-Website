@@ -1,32 +1,3 @@
-export type WaitlistEmailData = {
-  full_name: string;
-  email: string;
-};
-
-const LOGO_URL = process.env.CLAP_LOGO_URL!;
-const SUPPORT_EMAIL = process.env.CLAP_SUPPORT_EMAIL!;
-const INSTAGRAM_URL = process.env.CLAP_INSTAGRAM_URL!;
-const TWITTER_URL = process.env.CLAP_TWITTER_URL!;
-const LINKEDIN_URL = process.env.CLAP_LINKEDIN_URL!;
-const CONTACT_URL = process.env.CLAP_CONTACT_URL!;
-const PRIVACY_URL = process.env.CLAP_PRIVACY_URL!;
-const FAQ_URL = process.env.CLAP_FAQ_URL!;
-
-/**
- * Returns { subject, html, text } for the waitlist confirmation email.
- * Keep this function pure — no side effects, no async.
- */
-export function buildWaitlistConfirmationEmail(data: WaitlistEmailData): {
-  subject: string;
-  html: string;
-  text: string;
-} {
-  const { full_name } = data;
-  const firstName = full_name.trim().split(" ")[0];
-
-  const subject = `You're on the Clap waitlist 🎉`;
-
-  const html = /* html */ `
 <!doctype html>
 <html lang="en">
   <head>
@@ -235,7 +206,7 @@ export function buildWaitlistConfirmationEmail(data: WaitlistEmailData): {
                       <img
                         src="${LOGO_URL}"
                         alt="Clap"
-                        width="50"
+                        width="40"
                         style="
                           display: block;
                           height: auto;
@@ -451,32 +422,3 @@ export function buildWaitlistConfirmationEmail(data: WaitlistEmailData): {
     </table>
   </body>
 </html>
-
-  `.trim();
-
-  const text = `
-Hi ${firstName},
-
-You're officially on the Clap waitlist — welcome!
-
-We're building a faster, simpler way to move money across Africa, and you'll be among the first to know when we launch.
-
-From time to time, we'll send you updates, product news, and early access announcements as we get closer to launch.
-
-Thanks for joining us.
-The Clap Team
-
-Questions? Reply to this email or reach us at ${SUPPORT_EMAIL}
-
-Instagram: ${INSTAGRAM_URL}
-Twitter: ${TWITTER_URL}
-
-Contact Support: ${CONTACT_URL}
-Privacy Policy: ${PRIVACY_URL}
-FAQ: ${FAQ_URL}
-
-© ${new Date().getFullYear()} Clap. All rights reserved.
-  `.trim();
-
-  return { subject, html, text };
-}
