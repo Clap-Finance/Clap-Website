@@ -4,23 +4,27 @@
     "convert": "Convert",
     "contact": "Contact"
   },
+
   "Translation": {
     "english": "English",
     "french": "French",
     "swahili": "Swahili"
   },
+
   "HomePage": {
     "heroSection": {
       "title": "Move money like it should be — fast, simple, borderless.",
       "description": "Clap is building the future of African money movement — helping people send, receive, and convert money across borders with speed and transparency.",
       "cta": "Request early access"
     },
+
     "conversionSection": {
       "title": "Convert money instantly with real-time rates across Naira, Cedi, and CFA—so you always know exactly what you send and what arrives.",
       "description": "Convert your money with the best rates.",
       "cta": "Request early access"
     }
   },
+
   "WaitListFormSection": {
     "title": "Join the waitlist",
     "description": "Be among the first to send money across Africa with real rates and zero hidden fees using Clap.",
@@ -32,10 +36,11 @@
       },
       "email": {
         "label": "Email",
-        "error": "Email is required"
+        "error": "Enter a valid email"
       }
     }
   },
+
   "Modal": {
     "waitlist": {
       "title": "You’re on the",
@@ -43,6 +48,7 @@
       "description": "Thanks for joining the Clap waitlist. We’ll keep you updated and let you know as soon as early access is ready."
     }
   },
+
   "Footer": {
     "tag": "Contact Us.",
     "title": "Follow our journey",
@@ -58,6 +64,17 @@
       "contact": "Contact",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
+    },
+    "disclaimer": {
+      "paragraph1": "Clap Finance is a financial technology company, not a bank. Financial services are provided by licensed banking and financial partners in the jurisdictions where Clap operates.",
+
+      "paragraph2": "Clap provides technology and infrastructure that enable users to send, receive, convert, and manage money digitally. Banking, payment, card, and remittance services may be offered through regulated third-party partners.",
+
+      "paragraph3": "Funds held through partner financial institutions may be subject to the protections and limitations applicable under those institutions and local regulations.",
+
+      "paragraph4": "Certain services may not be available in all regions and may be subject to eligibility requirements, transaction limits, and regulatory approvals.",
+
+      "paragraph5": "All trademarks, logos, and brand names are the property of their respective owners."
     }
   }
 }

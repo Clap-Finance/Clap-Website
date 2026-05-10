@@ -4,50 +4,58 @@
     "convert": "Badilisha",
     "contact": "Wasiliana"
   },
+
   "Translation": {
     "english": "Kiingereza",
     "french": "Kifaransa",
     "swahili": "Kiswahili"
   },
+
   "HomePage": {
     "heroSection": {
-      "title": "Hamisha pesa jinsi inavyopaswa kuwa — haraka, rahisi, bila mipaka.",
-      "description": "Clap inajenga mustakabali wa uhamishaji pesa Afrika — kusaidia watu kutuma, kupokea, na kubadilisha pesa kwa uwazi na kasi.",
+      "title": "Hamisha pesa kama inavyopaswa — haraka, rahisi na bila mipaka.",
+      "description": "Clap inajenga mustakabali wa uhamishaji wa pesa Afrika — kusaidia watu kutuma, kupokea na kubadilisha pesa kuvuka mipaka kwa haraka na uwazi.",
       "cta": "Omba ufikiaji wa mapema"
     },
+
     "conversionSection": {
-      "title": "Badilisha pesa papo hapo kwa viwango vya muda halisi kati ya Naira, Cedi, na CFA.",
-      "description": "Badilisha pesa zako kwa viwango bora.",
+      "title": "Badilisha pesa papo hapo kwa viwango vya wakati halisi kati ya Naira, Cedi na CFA — ili ujue unachotuma na kupokea kila wakati.",
+      "description": "Badilisha pesa kwa viwango bora.",
       "cta": "Omba ufikiaji wa mapema"
     }
   },
+
   "WaitListFormSection": {
-    "title": "Jiunge na orodha ya wanaosubiri",
-    "description": "Kuwa miongoni mwa wa kwanza kutuma pesa Afrika kwa viwango halisi bila ada zilizofichwa kupitia Clap.",
-    "cta": "Jiunge na orodha ya wanaosubiri",
+    "title": "Jiunge na orodha ya kusubiri",
+    "description": "Kuwa miongoni mwa wa kwanza kutuma pesa kote Afrika kwa viwango halisi bila ada zilizofichwa kupitia Clap.",
+    "cta": "Jiunge na orodha ya kusubiri",
     "inputFeilds": {
       "fullName": {
-        "label": "Jina Kamili",
+        "label": "Jina kamili",
         "error": "Jina kamili linahitajika"
       },
       "email": {
         "label": "Barua pepe",
-        "error": "Barua pepe inahitajika"
+        "error": "Weka barua pepe halali"
       }
     }
   },
+
   "Modal": {
     "waitlist": {
       "title": "Uko kwenye",
-      "title_highlight": "orodha ya wanaosubiri!",
-      "description": "Asante kwa kujiunga na orodha ya Clap. Tutakujulisha mara tu ufikiaji wa mapema utakapokuwa tayari."
+      "title_highlight": "orodha ya kusubiri!",
+      "description": "Asante kwa kujiunga na orodha ya kusubiri ya Clap. Tutakujulisha mara tu ufikiaji wa mapema utakapokuwa tayari."
     }
   },
+
   "Footer": {
-    "description": "Clap inajenga miundombinu ya kisasa ya kifedha kwa Afrika — kufanya uhamishaji wa pesa kuvuka mipaka kuwa wa haraka, rahisi, na wazi zaidi.",
+    "tag": "Wasiliana nasi.",
+    "title": "Fuata safari yetu",
+    "description": "Clap inajenga miundombinu ya kisasa ya kifedha kwa Afrika — kufanya uhamishaji wa pesa kuvuka mipaka kuwa wa haraka, rahisi na wazi zaidi.",
     "navigation": "Urambazaji",
     "company": "Kampuni",
-    "socials": "Mitandao",
+    "socials": "Mitandao ya kijamii",
     "copyright": "© 2026 Clap. Haki zote zimehifadhiwa.",
     "built": "Imejengwa kwa Afrika, imeundwa kwa dunia.",
     "links": {
@@ -56,6 +64,17 @@
       "contact": "Wasiliana",
       "privacy": "Sera ya Faragha",
       "terms": "Masharti ya Huduma"
+    },
+    "disclaimer": {
+      "paragraph1": "Clap Finance ni kampuni ya teknolojia ya kifedha, si benki. Huduma za kifedha hutolewa na washirika wa benki na kifedha wenye leseni katika maeneo ambayo Clap inafanya kazi.",
+
+      "paragraph2": "Clap hutoa teknolojia na miundombinu inayowawezesha watumiaji kutuma, kupokea, kubadilisha na kusimamia pesa kidijitali. Huduma za benki, malipo, kadi na uhamishaji wa fedha zinaweza kutolewa kupitia washirika wengine waliodhibitiwa kisheria.",
+
+      "paragraph3": "Fedha zinazohifadhiwa kupitia taasisi za kifedha washirika zinaweza kuwa chini ya ulinzi na vikwazo vinavyotumika katika taasisi hizo na sheria za maeneo husika.",
+
+      "paragraph4": "Baadhi ya huduma huenda zisipatikane katika maeneo yote na zinaweza kuwa chini ya masharti ya kustahiki, viwango vya miamala na idhini za kisheria.",
+
+      "paragraph5": "Alama zote za biashara, nembo na majina ya chapa ni mali ya wamiliki wao husika."
     }
   }
 }

@@ -71,15 +71,11 @@ const Footer = () => {
 
               <ul>
                 <li>
-                  <Link href="/privacy-policy">
-                    {t("links.privacy")}
-                  </Link>
+                  <Link href="/privacy-policy">{t("links.privacy")}</Link>
                 </li>
 
                 <li>
-                  <Link href="/terms-of-service">
-                    {t("links.terms")}
-                  </Link>
+                  <Link href="/terms-of-service">{t("links.terms")}</Link>
                 </li>
               </ul>
             </div>
@@ -109,9 +105,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <a href="mailto:hello@clapmoney.com">
-                    hello@clapmoney.com
-                  </a>
+                  <a href="mailto:hello@clapmoney.com">hello@clapmoney.com</a>
                 </li>
               </ul>
             </div>
@@ -122,6 +116,14 @@ const Footer = () => {
           <p>{t("copyright")}</p>
 
           <span>{t("built")}</span>
+        </div>
+
+        <div className={style.footer__disclaimer}>
+          <p>{t("disclaimer.paragraph1")}</p>
+          <p>{t("disclaimer.paragraph2")}</p>
+          <p>{t("disclaimer.paragraph3")}</p>
+          <p>{t("disclaimer.paragraph4")}</p>
+          <p>{t("disclaimer.paragraph5")}</p>
         </div>
       </div>
     </footer>

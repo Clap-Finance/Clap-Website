@@ -106,11 +106,6 @@
     }
   }
 
-  /* =========================
-      FLOATING ORBS
-  ========================= */
-
-
 
   &__main {
     padding-inline: $spacing-lg;
@@ -220,5 +215,13 @@
       font-size: 0.85rem;
       line-height: 150%;
     }
+  }
+
+  &__disclaimer {
+color: rgba($color-white, 0.5);
+padding: $spacing-lg;
+display: grid;
+gap: $spacing-sm;
+font-size: 0.8rem;
   }
 }

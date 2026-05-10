@@ -118,7 +118,7 @@ const WaitlistForm = () => {
         fullWidth
         error={errors.full_name?.message}
         {...register("full_name", {
-          required: `${t("inputFeilds.fullName.label")}`,
+          required: `${t("inputFeilds.fullName.error")}`,
         })}
       />
 
@@ -132,7 +132,7 @@ const WaitlistForm = () => {
           required: "Email is required",
           pattern: {
             value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            message: `${t("inputFeilds.email.label")}`,
+            message: `${t("inputFeilds.email.error")}`,
           },
         })}
       />

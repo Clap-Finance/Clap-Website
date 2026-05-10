@@ -4,26 +4,30 @@
     "convert": "Convertir",
     "contact": "Contact"
   },
+
   "Translation": {
     "english": "Anglais",
     "french": "Français",
     "swahili": "Swahili"
   },
+
   "HomePage": {
     "heroSection": {
       "title": "Déplacez votre argent comme il se doit — rapide, simple et sans frontières.",
-      "description": "Clap construit l’avenir des transferts d’argent en Afrique — pour envoyer, recevoir et convertir de l’argent rapidement et en toute transparence.",
+      "description": "Clap construit l’avenir des transferts d’argent en Afrique — permettant d’envoyer, recevoir et convertir de l’argent à travers les frontières avec rapidité et transparence.",
       "cta": "Demander un accès anticipé"
     },
+
     "conversionSection": {
-      "title": "Convertissez votre argent instantanément avec des taux en temps réel entre le Naira, le Cedi et le CFA.",
+      "title": "Convertissez votre argent instantanément avec des taux en temps réel entre le Naira, le Cedi et le CFA — pour toujours savoir ce que vous envoyez et recevez.",
       "description": "Convertissez votre argent aux meilleurs taux.",
       "cta": "Demander un accès anticipé"
     }
   },
+
   "WaitListFormSection": {
-    "title": "Rejoindre la liste d’attente",
-    "description": "Soyez parmi les premiers à envoyer de l’argent en Afrique avec des taux réels et sans frais cachés grâce à Clap.",
+    "title": "Rejoignez la liste d’attente",
+    "description": "Soyez parmi les premiers à envoyer de l’argent à travers l’Afrique avec des taux réels et sans frais cachés avec Clap.",
     "cta": "Rejoindre la liste d’attente",
     "inputFeilds": {
       "fullName": {
@@ -32,22 +36,26 @@
       },
       "email": {
         "label": "E-mail",
-        "error": "L’e-mail est requis"
+        "error": "Entrez un e-mail valide"
       }
     }
   },
+
   "Modal": {
     "waitlist": {
       "title": "Vous êtes sur la",
       "title_highlight": "liste d’attente !",
-      "description": "Merci d’avoir rejoint la liste d’attente Clap. Nous vous tiendrons informé dès que l’accès anticipé sera disponible."
+      "description": "Merci d’avoir rejoint la liste d’attente de Clap. Nous vous tiendrons informé dès que l’accès anticipé sera prêt."
     }
   },
+
   "Footer": {
-    "description": "Clap construit une infrastructure financière moderne pour l’Afrique — rendant les transferts d’argent internationaux plus rapides, simples et transparents.",
+    "tag": "Contactez-nous.",
+    "title": "Suivez notre parcours",
+    "description": "Clap construit une infrastructure financière moderne pour l’Afrique — rendant les transferts transfrontaliers plus rapides, simples et transparents.",
     "navigation": "Navigation",
     "company": "Entreprise",
-    "socials": "Réseaux",
+    "socials": "Réseaux sociaux",
     "copyright": "© 2026 Clap. Tous droits réservés.",
     "built": "Conçu pour l’Afrique, pensé pour le monde.",
     "links": {
@@ -56,6 +64,17 @@
       "contact": "Contact",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d’utilisation"
+    },
+    "disclaimer": {
+      "paragraph1": "Clap Finance est une entreprise de technologie financière et non une banque. Les services financiers sont fournis par des partenaires bancaires et financiers agréés dans les juridictions où Clap opère.",
+
+      "paragraph2": "Clap fournit une technologie et une infrastructure permettant aux utilisateurs d’envoyer, de recevoir, de convertir et de gérer leur argent numériquement. Les services bancaires, de paiement, de carte et de transfert peuvent être proposés par des partenaires tiers réglementés.",
+
+      "paragraph3": "Les fonds détenus auprès des institutions financières partenaires peuvent être soumis aux protections et limitations applicables selon ces institutions et les réglementations locales.",
+
+      "paragraph4": "Certains services peuvent ne pas être disponibles dans toutes les régions et peuvent être soumis à des conditions d’éligibilité, des limites de transaction et des approbations réglementaires.",
+
+      "paragraph5": "Toutes les marques commerciales, logos et noms de marque sont la propriété de leurs détenteurs respectifs."
     }
   }
 }
