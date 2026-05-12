@@ -23,6 +23,10 @@
     padding: $spacing-md;
     border-radius: 1.25rem;
 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
     transition:
       flex 0.45s ease,
       transform 0.35s ease,

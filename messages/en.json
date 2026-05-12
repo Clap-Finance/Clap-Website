@@ -1,33 +1,32 @@
 {
   "Navigation": {
-    "community": "Community",
-    "convert": "Convert",
+    "community": "Businesses",
+    "convert": "Drivers",
     "contact": "Contact"
   },
 
   "Translation": {
     "english": "English",
-    "french": "French",
-    "swahili": "Swahili"
+    "french": "French"
   },
 
   "HomePage": {
     "heroSection": {
-      "title": "Move money like it should be — fast, simple, borderless.",
-      "description": "Clap is building the future of African money movement — helping people send, receive, and convert money across borders with speed and transparency.",
+      "title": "Accept payments instantly across Nigeria.",
+      "description": "Clap helps businesses and drivers receive money faster with instant transfers, QR payments, and seamless collections built for everyday commerce.",
       "cta": "Request early access"
     },
 
     "conversionSection": {
-      "title": "Convert money instantly with real-time rates across Naira, Cedi, and CFA—so you always know exactly what you send and what arrives.",
-      "description": "Convert your money with the best rates.",
+      "title": "Built for ride payments, business collections, and everyday transfers.",
+      "description": "Pay for rides, collect payments, and move money instantly with a faster and simpler payment experience.",
       "cta": "Request early access"
     }
   },
 
   "WaitListFormSection": {
     "title": "Join the waitlist",
-    "description": "Be among the first to send money across Africa with real rates and zero hidden fees using Clap.",
+    "description": "Be among the first businesses, drivers, and early users to experience instant payments with Clap.",
     "cta": "Join the waitlist",
     "inputFeilds": {
       "fullName": {
@@ -45,34 +44,34 @@
     "waitlist": {
       "title": "You’re on the",
       "title_highlight": "waitlist!",
-      "description": "Thanks for joining the Clap waitlist. We’ll keep you updated and let you know as soon as early access is ready."
+      "description": "Thanks for joining the Clap waitlist. We’ll keep you updated as we prepare early access across Nigeria."
     }
   },
 
   "Footer": {
-    "tag": "Contact Us.",
-    "title": "Follow our journey",
-    "description": "Clap is building modern financial infrastructure for Africa — making cross-border money movement faster, simpler, and more transparent.",
+    "tag": "Built for Nigerian commerce.",
+    "title": "Move money faster with Clap",
+    "description": "Clap is building modern payment infrastructure for Nigeria — helping businesses, drivers, and everyday users send and receive money instantly.",
     "navigation": "Navigation",
     "company": "Company",
     "socials": "Socials",
     "copyright": "© 2026 Clap. All rights reserved.",
-    "built": "Built for Africa, designed for the world.",
+    "built": "Built for speed. Designed for trust.",
     "links": {
-      "community": "Community",
-      "convert": "Convert",
+      "community": "Businesses",
+      "convert": "Drivers",
       "contact": "Contact",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     },
     "disclaimer": {
-      "paragraph1": "Clap Finance is a financial technology company, not a bank. Financial services are provided by licensed banking and financial partners in the jurisdictions where Clap operates.",
+      "paragraph1": "Clap is a financial technology company, not a bank. Financial services are provided through licensed banking and payment partners in Nigeria.",
 
-      "paragraph2": "Clap provides technology and infrastructure that enable users to send, receive, convert, and manage money digitally. Banking, payment, card, and remittance services may be offered through regulated third-party partners.",
+      "paragraph2": "Clap provides technology and infrastructure that enable users and businesses to send, receive, and manage digital payments securely and efficiently.",
 
-      "paragraph3": "Funds held through partner financial institutions may be subject to the protections and limitations applicable under those institutions and local regulations.",
+      "paragraph3": "Payment processing, wallet services, settlements, and related financial services may be facilitated through regulated third-party financial institutions and payment providers.",
 
-      "paragraph4": "Certain services may not be available in all regions and may be subject to eligibility requirements, transaction limits, and regulatory approvals.",
+      "paragraph4": "Certain services may be subject to eligibility requirements, transaction limits, compliance checks, and regulatory approvals.",
 
       "paragraph5": "All trademarks, logos, and brand names are the property of their respective owners."
     }

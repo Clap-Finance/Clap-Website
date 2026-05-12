@@ -17,7 +17,6 @@ const LanguagePopover = () => {
   const languages = [
     { code: "en", label: t("english") },
     { code: "fr", label: t("french") },
-    { code: "sw", label: t("swahili") },
   ];
 
  const switchLocale = (newLocale: string) => {

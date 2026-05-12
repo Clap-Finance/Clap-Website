@@ -9,7 +9,6 @@ import { useTranslations } from "next-intl";
 import { HamburgerMenu, CloseCircle } from "iconsax-reactjs";
 import Modal from "../modal";
 import WaitlistFOrm from "@/app/[locale]/(home)/_components/form/Waitlist";
-import SuccessModal from "../modal/successModal";
 
 const Nav = () => {
   const t = useTranslations("Navigation");

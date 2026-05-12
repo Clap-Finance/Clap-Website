@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NumberFlow from "@number-flow/react";
 import styles from "./styles/Stats.module.scss";
+import { Global, Moneys, Profile2User } from "iconsax-reactjs";
 
 interface CountryStat {
   country: string;
@@ -25,7 +26,13 @@ const Stats = () => {
     null,
   );
 
-  const [loading, setLoading] = useState(true);
+  const [displayValues, setDisplayValues] = useState({
+    signups: 0,
+    countries: 0,
+    topCountry: 0,
+  });
+
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const fetchStats = async () => {
@@ -39,37 +46,91 @@ const Stats = () => {
         }
       } catch (error) {
         console.error("Failed to fetch stats", error);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchStats();
   }, []);
 
-  if (loading) {
-    return (
-      <div className={styles.stats}>
-        <div className={styles.stats__container}>Loading...</div>
-      </div>
+  useEffect(() => {
+    if (!stats) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setDisplayValues({
+            signups: stats.total_signups,
+            countries: stats.total_countries,
+            topCountry: stats.countries[0]?.signups ?? 0,
+          });
+
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.3,
+      },
     );
-  }
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [stats]);
 
   return (
-    <div className={styles.stats}>
+    <div className={styles.stats} ref={sectionRef}>
       <div className={styles.stats__container}>
         <div className={styles.stats__card}>
-          <NumberFlow className={styles.stats__card_number} value={stats?.total_signups ?? 0} />{" "}
-          <h3>People on <br /> the waitlist</h3>
+          <div>
+            <Profile2User size="32" color="#555555" variant="TwoTone" />
+          </div>
+
+          <div>
+            <NumberFlow
+              className={styles.stats__card_number}
+              value={displayValues.signups}
+            />
+
+            <h3>
+              People on <br /> the waitlist
+            </h3>
+          </div>
         </div>
 
         <div className={styles.stats__card}>
-          <NumberFlow className={styles.stats__card_number} value={stats?.total_countries ?? 0} />
-          <h3>Countries with <br /> early signups</h3>
+          <div>
+            <Global size="32" color="#555555" variant="TwoTone" />
+          </div>
+
+          <div>
+            <NumberFlow
+              className={styles.stats__card_number}
+              value={displayValues.countries}
+            />
+
+            <h3>
+              Countries with <br /> early signups
+            </h3>
+          </div>
         </div>
+
         <div className={styles.stats__card}>
-          <NumberFlow className={styles.stats__card_number} value={stats?.countries[0]?.signups ?? 0} />
-          <h3>Top <br /> Country</h3>
+          <div>
+            <Moneys size="32" color="#555555" variant="TwoTone" />
+          </div>
+
+          <div>
+            <NumberFlow
+              className={styles.stats__card_number}
+              value={displayValues.topCountry}
+            />
+
+            <h3>
+              Top <br /> Country
+            </h3>
+          </div>
         </div>
       </div>
     </div>

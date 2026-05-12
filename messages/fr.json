@@ -1,33 +1,32 @@
 {
   "Navigation": {
-    "community": "Communauté",
-    "convert": "Convertir",
+    "community": "Entreprises",
+    "convert": "Chauffeurs",
     "contact": "Contact"
   },
 
   "Translation": {
     "english": "Anglais",
-    "french": "Français",
-    "swahili": "Swahili"
+    "french": "Français"
   },
 
   "HomePage": {
     "heroSection": {
-      "title": "Déplacez votre argent comme il se doit — rapide, simple et sans frontières.",
-      "description": "Clap construit l’avenir des transferts d’argent en Afrique — permettant d’envoyer, recevoir et convertir de l’argent à travers les frontières avec rapidité et transparence.",
+      "title": "Acceptez des paiements instantanément partout au Nigeria.",
+      "description": "Clap aide les entreprises et les chauffeurs à recevoir de l’argent plus rapidement grâce aux transferts instantanés, aux paiements QR et aux encaissements simplifiés conçus pour le commerce quotidien.",
       "cta": "Demander un accès anticipé"
     },
 
     "conversionSection": {
-      "title": "Convertissez votre argent instantanément avec des taux en temps réel entre le Naira, le Cedi et le CFA — pour toujours savoir ce que vous envoyez et recevez.",
-      "description": "Convertissez votre argent aux meilleurs taux.",
+      "title": "Conçu pour les paiements de trajets, les encaissements commerciaux et les transferts quotidiens.",
+      "description": "Payez vos trajets, recevez des paiements et transférez de l’argent instantanément avec une expérience plus rapide et plus simple.",
       "cta": "Demander un accès anticipé"
     }
   },
 
   "WaitListFormSection": {
-    "title": "Rejoignez la liste d’attente",
-    "description": "Soyez parmi les premiers à envoyer de l’argent à travers l’Afrique avec des taux réels et sans frais cachés avec Clap.",
+    "title": "Rejoindre la liste d’attente",
+    "description": "Soyez parmi les premières entreprises, chauffeurs et utilisateurs à découvrir les paiements instantanés avec Clap.",
     "cta": "Rejoindre la liste d’attente",
     "inputFeilds": {
       "fullName": {
@@ -36,7 +35,7 @@
       },
       "email": {
         "label": "E-mail",
-        "error": "Entrez un e-mail valide"
+        "error": "Entrez une adresse e-mail valide"
       }
     }
   },
@@ -45,36 +44,36 @@
     "waitlist": {
       "title": "Vous êtes sur la",
       "title_highlight": "liste d’attente !",
-      "description": "Merci d’avoir rejoint la liste d’attente de Clap. Nous vous tiendrons informé dès que l’accès anticipé sera prêt."
+      "description": "Merci d’avoir rejoint la liste d’attente Clap. Nous vous tiendrons informé dès que l’accès anticipé sera disponible au Nigeria."
     }
   },
 
   "Footer": {
-    "tag": "Contactez-nous.",
-    "title": "Suivez notre parcours",
-    "description": "Clap construit une infrastructure financière moderne pour l’Afrique — rendant les transferts transfrontaliers plus rapides, simples et transparents.",
+    "tag": "Conçu pour le commerce nigérian.",
+    "title": "Déplacez votre argent plus rapidement avec Clap",
+    "description": "Clap construit une infrastructure de paiement moderne pour le Nigeria afin d’aider les entreprises, les chauffeurs et les utilisateurs quotidiens à envoyer et recevoir de l’argent instantanément.",
     "navigation": "Navigation",
     "company": "Entreprise",
     "socials": "Réseaux sociaux",
     "copyright": "© 2026 Clap. Tous droits réservés.",
-    "built": "Conçu pour l’Afrique, pensé pour le monde.",
+    "built": "Conçu pour la rapidité. Pensé pour la confiance.",
     "links": {
-      "community": "Communauté",
-      "convert": "Convertir",
+      "community": "Entreprises",
+      "convert": "Chauffeurs",
       "contact": "Contact",
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d’utilisation"
     },
     "disclaimer": {
-      "paragraph1": "Clap Finance est une entreprise de technologie financière et non une banque. Les services financiers sont fournis par des partenaires bancaires et financiers agréés dans les juridictions où Clap opère.",
+      "paragraph1": "Clap est une entreprise de technologie financière, et non une banque. Les services financiers sont fournis par des partenaires bancaires et de paiement agréés au Nigeria.",
 
-      "paragraph2": "Clap fournit une technologie et une infrastructure permettant aux utilisateurs d’envoyer, de recevoir, de convertir et de gérer leur argent numériquement. Les services bancaires, de paiement, de carte et de transfert peuvent être proposés par des partenaires tiers réglementés.",
+      "paragraph2": "Clap fournit une technologie et une infrastructure permettant aux utilisateurs et aux entreprises d’envoyer, de recevoir et de gérer des paiements numériques de manière sécurisée et efficace.",
 
-      "paragraph3": "Les fonds détenus auprès des institutions financières partenaires peuvent être soumis aux protections et limitations applicables selon ces institutions et les réglementations locales.",
+      "paragraph3": "Le traitement des paiements, les services de portefeuille, les règlements et les services financiers associés peuvent être facilités par des institutions financières et des fournisseurs de paiement réglementés.",
 
-      "paragraph4": "Certains services peuvent ne pas être disponibles dans toutes les régions et peuvent être soumis à des conditions d’éligibilité, des limites de transaction et des approbations réglementaires.",
+      "paragraph4": "Certains services peuvent être soumis à des conditions d’éligibilité, des limites de transaction, des vérifications de conformité et des approbations réglementaires.",
 
-      "paragraph5": "Toutes les marques commerciales, logos et noms de marque sont la propriété de leurs détenteurs respectifs."
+      "paragraph5": "Toutes les marques, logos et noms commerciaux sont la propriété de leurs détenteurs respectifs."
     }
   }
 }
